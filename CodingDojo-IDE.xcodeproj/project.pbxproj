@@ -13,8 +13,11 @@
 		4C197B7A2383D19100C77503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C197B792383D19100C77503 /* Assets.xcassets */; };
 		4C197B7D2383D19100C77503 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C197B7C2383D19100C77503 /* Preview Assets.xcassets */; };
 		4C197B802383D19100C77503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C197B7E2383D19100C77503 /* LaunchScreen.storyboard */; };
-		4C197B8B2383D19100C77503 /* CodingDojo_IDETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C197B8A2383D19100C77503 /* CodingDojo_IDETests.swift */; };
 		4C197B962383D19100C77503 /* CodingDojo_IDEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C197B952383D19100C77503 /* CodingDojo_IDEUITests.swift */; };
+		4C197BA52383D33100C77503 /* Terminator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C197BA42383D33100C77503 /* Terminator.swift */; };
+		4C197BA72383D3D900C77503 /* Terminator-Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C197BA62383D3D900C77503 /* Terminator-Tests.swift */; };
+		4C4D88572383F42B0043DF01 /* SpaceXMotorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D88562383F42B0043DF01 /* SpaceXMotorType.swift */; };
+		4C4D88592383FA4D0043DF01 /* Meteo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D88582383FA4D0043DF01 /* Meteo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +47,14 @@
 		4C197B7F2383D19100C77503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C197B812383D19100C77503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C197B862383D19100C77503 /* CodingDojo-IDETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodingDojo-IDETests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C197B8A2383D19100C77503 /* CodingDojo_IDETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingDojo_IDETests.swift; sourceTree = "<group>"; };
 		4C197B8C2383D19100C77503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C197B912383D19100C77503 /* CodingDojo-IDEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodingDojo-IDEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C197B952383D19100C77503 /* CodingDojo_IDEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingDojo_IDEUITests.swift; sourceTree = "<group>"; };
 		4C197B972383D19100C77503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C197BA42383D33100C77503 /* Terminator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminator.swift; sourceTree = "<group>"; };
+		4C197BA62383D3D900C77503 /* Terminator-Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terminator-Tests.swift"; sourceTree = "<group>"; };
+		4C4D88562383F42B0043DF01 /* SpaceXMotorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXMotorType.swift; sourceTree = "<group>"; };
+		4C4D88582383FA4D0043DF01 /* Meteo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		4C197B722383D18E00C77503 /* CodingDojo-IDE */ = {
 			isa = PBXGroup;
 			children = (
+				4C197BA32383D31C00C77503 /* SandBox */,
 				4C197B732383D18E00C77503 /* AppDelegate.swift */,
 				4C197B752383D18E00C77503 /* SceneDelegate.swift */,
 				4C197B772383D18E00C77503 /* ContentView.swift */,
@@ -121,8 +128,8 @@
 		4C197B892383D19100C77503 /* CodingDojo-IDETests */ = {
 			isa = PBXGroup;
 			children = (
-				4C197B8A2383D19100C77503 /* CodingDojo_IDETests.swift */,
 				4C197B8C2383D19100C77503 /* Info.plist */,
+				4C197BA62383D3D900C77503 /* Terminator-Tests.swift */,
 			);
 			path = "CodingDojo-IDETests";
 			sourceTree = "<group>";
@@ -134,6 +141,16 @@
 				4C197B972383D19100C77503 /* Info.plist */,
 			);
 			path = "CodingDojo-IDEUITests";
+			sourceTree = "<group>";
+		};
+		4C197BA32383D31C00C77503 /* SandBox */ = {
+			isa = PBXGroup;
+			children = (
+				4C197BA42383D33100C77503 /* Terminator.swift */,
+				4C4D88562383F42B0043DF01 /* SpaceXMotorType.swift */,
+				4C4D88582383FA4D0043DF01 /* Meteo.swift */,
+			);
+			path = SandBox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4D88592383FA4D0043DF01 /* Meteo.swift in Sources */,
+				4C4D88572383F42B0043DF01 /* SpaceXMotorType.swift in Sources */,
 				4C197B742383D18E00C77503 /* AppDelegate.swift in Sources */,
+				4C197BA52383D33100C77503 /* Terminator.swift in Sources */,
 				4C197B762383D18E00C77503 /* SceneDelegate.swift in Sources */,
 				4C197B782383D18E00C77503 /* ContentView.swift in Sources */,
 			);
@@ -277,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C197B8B2383D19100C77503 /* CodingDojo_IDETests.swift in Sources */,
+				4C197BA72383D3D900C77503 /* Terminator-Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
