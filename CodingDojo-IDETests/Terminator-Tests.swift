@@ -71,4 +71,10 @@ class Terminator_Tests: XCTestCase {
     func testInitT800() {
         XCTAssertNotNil(T800())
     }
+    
+    // Should pass if succes is called, fail if 'fail' is called
+    func testLaunchCriticalSystem() {
+        // TODO: crapy test
+        XCTAssert(false)
+    }
 }

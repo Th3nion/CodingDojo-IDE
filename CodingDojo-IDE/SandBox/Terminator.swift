@@ -11,6 +11,15 @@ import Foundation
 /// 🤖 I really do not know what this class is for
 class Terminator {
     
+    // Array of lumière
+    static var lumières: Bool = Bool()
+    
+    func setupLights() {
+        lumières['front'] = false
+        lumières['back'] = false
+        lumières['right'] = false
+        lumières['gauche'] = false
+    }
     
     /// Calculate the space X rocket path with wind value
     /// - Parameters:
@@ -84,6 +93,36 @@ class Terminator {
         
         return sum + sum2 + sum3
     }
+    
+    static func launchCriticalSystems(success: () -> Void, fail: () -> Void) {
+        let path = calculateSpaceXPath(first: 4, second: 5, third: 12, wind: 3, meteo: .sunny)
+        if path > 50 {
+            success()
+            } else {
+        fail()
+        }
+    }
+    
+    static func turnOnLights() {
+        lumières['front'] = true
+        lumières['back'] = true
+        lumières['right'] = true
+        lumières['gauche'] = true
+    }
+    
+    static func turnOffLights() {
+        DispatchQueue.main.async {
+        DispatchQueue.global().async {
+        DispatchQueue.main.async {
+            lumières['front'] = false
+            lumières['back'] = false
+            lumières['right'] = false
+            lumières['gauche'] = false
+        }
+        }
+        }
+    }
+    
 }
 
 /// This is the new space X model 😎
@@ -92,6 +131,4 @@ class T800 {
     
     // var motor: String
     // var model: String
-    
-    
 }
