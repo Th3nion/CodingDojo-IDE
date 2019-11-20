@@ -13,7 +13,7 @@ import CodingDojo_IDE
 class Terminator_Tests: XCTestCase {
 
     override func setUp() {
-        // 🤔
+        // Maybe we could instanciate a Terminator here and remove all static keywords 🤔
     }
 
     override func tearDown() {
@@ -61,14 +61,14 @@ class Terminator_Tests: XCTestCase {
     }
     
     func testHeadacheCalcul() {
-        XCTAssertTrue(Terminator.headacheCalcul() == 18)
+        XCTAssertTrue(Terminator.headacheCalcul() == 59)
     }
     
     func testHeadacheCalcul2() {
-        XCTAssertTrue(Terminator.headacheCalcul2() == 18)
+        XCTAssertTrue(Terminator.headacheCalcul2() == 57)
     }
     
-    func testMethodWichCall() {
-        XCTAssertTrue(Terminator.methodWichCall() == 18)
+    func testInitT800() {
+        XCTAssertNotNil(T800())
     }
 }

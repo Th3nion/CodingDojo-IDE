@@ -49,7 +49,7 @@ class Terminator {
         return -1
     }
     
-    func headacheCalcul() -> Int {
+    static func headacheCalcul() -> Int {
         var extraNameO = 1
         var extraNameC = 2
         var extraNameZr = 3
@@ -67,7 +67,7 @@ class Terminator {
         return sum + sum2 + sum3
     }
     
-    func headacheCalcul2() -> Int {
+    static func headacheCalcul2() -> Int {
         var extraNameO = 1
         var extraNameC = 2
         var extraNameZr = 3
@@ -84,11 +84,14 @@ class Terminator {
         
         return sum + sum2 + sum3
     }
+}
+
+/// This is the new space X model 😎
+/// But its properties are commented, and there is no initializer !
+class T800 {
     
+    // var motor: String
+    // var model: String
     
-    func methodWichCall() -> Int {
-        
-        return self.methodWichDontExist()
-    }
     
 }
